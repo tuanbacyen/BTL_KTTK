@@ -1,12 +1,11 @@
 $( document ).ready(function() {
     'use strict';
 
-    // Data to charts
     var data = [{
         "name": "Miasta",
-        "axisY": ["Manhattan", "Bronx", "Staten Island", "Wyry", "Brooklyn", "Brooklyn", "Gliwice"],
+        "axisY": ["Japan", "USA", "Germany", "Australia", "UK", "Korean"],
         "axisX": ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"],
-        "bars": [50, 65, 90, 76, 90, 76, 68]
+        "bars": [50, 65, 94, 76, 90, 76]
     },
     {
         "name": "Coca-cola - składniki",
@@ -15,7 +14,6 @@ $( document ).ready(function() {
         "bars": [32, 23, 76, 68, 4, 97]
     }];
 
-    // My options
     var options = {
         data: data[0],
         showValues: true,
@@ -25,7 +23,6 @@ $( document ).ready(function() {
         animationOffset: 200,
     };
 
-    // Defaul chart
     var $myChart = $('#chart-1');
 
     $myChart.horizontalChart(options);
@@ -33,7 +30,7 @@ $( document ).ready(function() {
     //*************************************************************************
     //  Methods
     /**************************************************************************
-    $myChart.horizontalChart(options);                             // Initialization horizontal chart.
+     $myChart.horizontalChart(options);                             // Initialization horizontal chart.
 
     $myChart.horizontalChart('resetAll');                          // Remove all data.
     $myChart.horizontalChart('resetBars');                         // Remove all bars.
